@@ -18,7 +18,7 @@ public class Profesor extends Persona {
     public Profesor() {
     }
 
-    public Profesor(int numeroEmpleado, String asignaturas, ProgramaAcademico programaAcademico,Curso curso, int dni, String nombre, String apellido, String domicilio, int horario) {
+    public Profesor(int numeroEmpleado, String asignaturas, ProgramaAcademico programaAcademico, Curso curso, int dni, String nombre, String apellido, String domicilio, int horario) {
         super(dni, nombre, apellido, domicilio, horario);
         this.numeroEmpleado = numeroEmpleado;
         this.asignaturas = asignaturas;
@@ -34,7 +34,6 @@ public class Profesor extends Persona {
         this.curso = curso;
     }
 
-    
     public int getNumeroEmpleado() {
         return numeroEmpleado;
     }
@@ -66,7 +65,9 @@ public class Profesor extends Persona {
         System.out.println("********************************");
         System.out.println("Número de Empleado: " + numeroEmpleado);
         System.out.println("Nombre y Apellido: " + getNombre() + " " + getApellido());
-
+        System.out.println("DNI: " + getDni());
+        System.out.println("Direccion: " + getDomicilio());
+        System.out.println("Horario: " + getHorario());
         System.out.println("Asignaturas: " + asignaturas);
         System.out.println("Curso: " + curso.getNombre());
         System.out.println("Programa Académico: " + programaAcademico.getNombre());
