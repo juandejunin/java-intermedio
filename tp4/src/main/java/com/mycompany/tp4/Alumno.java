@@ -62,11 +62,12 @@ public class Alumno extends Persona {
     public String toString() {
         return "Alumno{" + "grado=" + grado + ", comision=" + comision + ", numeroMatricula=" + numeroMatricula + ", curso=" + curso + '}';
     }
-    
-    
-        public double calcularCalificacionFinal() {
+
+    public double calcularCalificacionFinal() {
         return curso.calcularPromedioNotas();
     }
+    
+    
 
     public void mostrarInformacion() {
         System.out.println("**********************************************");
@@ -75,9 +76,11 @@ public class Alumno extends Persona {
         System.out.println("Nombre y Apellido: " + getNombre() + " " + getApellido());
         System.out.println("Grado: " + grado);
         System.out.println("Comisión: " + comision);
+        System.out.println("DNI: " + getDni());
+        System.out.println("Direccion: " + getDomicilio());
+        System.out.println("Horario: " + getHorario());
         System.out.println("Número de Matrícula: " + numeroMatricula);
-        System.out.println("Curso: " + curso.getNombre());
-        System.out.println("Calificación Final: " + calcularCalificacionFinal());
+        System.out.println("Curso: " + curso);
         System.out.println("");
     }
 }
